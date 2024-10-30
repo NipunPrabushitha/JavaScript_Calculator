@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 50px;
+
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #555;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    border-radius: 10%;
+    background-color: #666;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.light-grey{
+    background-color: lightgray;
+    color: black;
+}
+
+.orange {
+    background-color: #ff9500;
+}
+
+.equal {
+    background-color: #28a745;
+}
+
+/* Styling for the zero button to span two columns */
+.zero {
+    grid-column: span 2; /* Makes the 0 button span two columns */
+}

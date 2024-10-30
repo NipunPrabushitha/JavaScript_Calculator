@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="calculator">
+    <h1>Calculator</h1>
+    <div id="display" class="display">0</div>
+    <hr>
+    <div class="buttons">
+        <!-- First Row -->
+        <button class="btn light-grey" onclick="feraser()">C</button>
+        <button class="btn light-grey" onclick="moduloOperation()">%</button>
+        <button class="btn light-grey" onclick="toggleSign()">+/-</button>
+        <button class="btn orange" onclick="dv()">/</button>
 
+        <!-- Second Row -->
+        <button class="btn" onclick="fn7()">7</button>
+        <button class="btn" onclick="fn8()">8</button>
+        <button class="btn" onclick="fn9()">9</button>
+        <button class="btn orange" onclick="ml()">*</button>
+
+        <!-- Third Row -->
+        <button class="btn" onclick="fn4()">4</button>
+        <button class="btn" onclick="fn5()">5</button>
+        <button class="btn" onclick="fn6()">6</button>
+        <button class="btn orange" onclick="mn()">-</button>
+
+        <!-- Fourth Row -->
+        <button class="btn" onclick="fn1()">1</button>
+        <button class="btn" onclick="fn2()">2</button>
+        <button class="btn" onclick="fn3()">3</button>
+        <button class="btn orange" onclick="addition()">+</button>
+
+        <!-- Fifth Row -->
+        <button class="btn zero" onclick="fn0()">0</button>
+        <button class="btn" onclick="fnDecimal()">.</button>
+        <button class="btn orange" onclick="eq()">=</button>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
